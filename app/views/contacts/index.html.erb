@@ -12,7 +12,8 @@
   <tbody>
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= contact.agent_id %></td>
+        <!--<td><%= contact.agent_id %></td>-->
+        <td><%= @agents[contact.agent_id-1].name %></td>
         <td><%= contact.name %></td>
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>

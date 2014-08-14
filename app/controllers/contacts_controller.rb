@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-  before_action :set_agents, only:[:new, :edit, :update]
+  before_action :set_agents, only:[:index, :new, :edit, :update]
   # GET /contacts
   # GET /contacts.json
   def index
